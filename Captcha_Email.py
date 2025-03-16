@@ -32,7 +32,7 @@ def send_email(email_data):
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("2005anshi1089ind@gmail.com", "tsbd iznv uysf uwmt")
+        server.login("email", "password")
         message = create_message()
         for email in email_data:
             server.sendmail("2005anshi1089ind@gmail.com", email, message)
